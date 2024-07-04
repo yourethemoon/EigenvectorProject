@@ -155,5 +155,11 @@ public class Matrix implements Cloneable, java.io.Serializable {
         }
         return v;
     }
-    
+    //Assume A is nx2n
+    public static Matrix rowReduce(Matrix A){
+        ComplexNumber[][] mat = A.getArrayCopy();
+        int m = A.getColumnDimension();
+        int n = A.getRowDimension();
+        
+    }
 }
